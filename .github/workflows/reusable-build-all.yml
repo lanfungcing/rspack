@@ -33,6 +33,8 @@ jobs:
             runner: ${{ vars.LINUX_SELF_HOSTED_RUNNER_LABELS || '"ubuntu-22.04"' }}
           - target: aarch64-unknown-linux-musl
             runner: ${{ vars.LINUX_SELF_HOSTED_RUNNER_LABELS || '"ubuntu-22.04"' }}
+          - target: aarch64-unknown-linux-ohos
+            runner: ${{ vars.LINUX_SELF_HOSTED_RUNNER_LABELS || '"ubuntu-22.04"' }}
           - target: i686-pc-windows-msvc
             runner: ${{ '"windows-latest"' }}
           - target: x86_64-pc-windows-msvc

@@ -211,6 +211,7 @@ npm/**/*.node
 !npm/win32-arm64-msvc
 !npm/win32-ia32-msvc
 !npm/win32-x64-msvc/
+!npm/openharmony-arm64/
 
 # Precompiled config schema
 packages/rspack/src/config/schema.check.js

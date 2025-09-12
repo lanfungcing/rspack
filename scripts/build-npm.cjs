@@ -17,7 +17,8 @@ const SysToNodePlatform = {
 	linux: "linux",
 	freebsd: "freebsd",
 	darwin: "darwin",
-	windows: "win32"
+	windows: "win32",
+	ohos: "openharmony"
 };
 
 const AbiToNodeLibc = {
@@ -49,6 +50,10 @@ function parseTriple(rawTriple) {
 		[cpu, , sys] = triples;
 	} else {
 		[cpu, sys] = triples;
+	}
+	if (abi === "ohos") {
+		sys = abi;
+		abi = null;
 	}
 	const platformName = SysToNodePlatform[sys] ?? sys;
 	const arch = CpuToNodeArch[cpu] ?? cpu;

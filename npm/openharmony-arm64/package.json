@@ -1,0 +1,26 @@
+{
+  "name": "@rspack/binding-openharmony-arm64",
+  "version": "1.5.8",
+  "license": "MIT",
+  "description": "Node binding for rspack",
+  "main": "rspack.openharmony-arm64.node",
+  "homepage": "https://rspack.rs",
+  "bugs": "https://github.com/web-infra-dev/rspack/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/web-infra-dev/rspack",
+    "directory": "packages/rspack"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "rspack.openharmony-arm64.node"
+  ],
+  "os": [
+    "openharmony"
+  ],
+  "cpu": [
+    "arm64"
+  ]
+}

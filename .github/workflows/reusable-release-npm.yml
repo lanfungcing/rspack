@@ -54,6 +54,8 @@ jobs:
             runner: ${{ needs.get-runner-labels.outputs.LINUX_RUNNER_LABELS }}
           - target: aarch64-unknown-linux-musl
             runner: ${{ needs.get-runner-labels.outputs.LINUX_RUNNER_LABELS }}
+          - target: aarch64-unknown-linux-ohos
+            runner: ${{ needs.get-runner-labels.outputs.LINUX_RUNNER_LABELS }}
           - target: i686-pc-windows-msvc
             runner: ${{ needs.get-runner-labels.outputs.WINDOWS_RUNNER_LABELS }}
           - target: x86_64-pc-windows-msvc

@@ -32,7 +32,7 @@
   "bugs": "https://github.com/web-infra-dev/rspack/issues",
   "repository": "web-infra-dev/rspack",
   "devDependencies": {
-    "@napi-rs/cli": "3.0.4",
+    "@napi-rs/cli": "3.1.5",
     "@napi-rs/wasm-runtime": "^1.0.5",
     "emnapi": "^1.5.0",
     "typescript": "^5.9.2"
@@ -52,7 +52,8 @@
       "aarch64-apple-darwin",
       "aarch64-unknown-linux-musl",
       "aarch64-pc-windows-msvc",
-      "wasm32-wasip1-threads"
+      "wasm32-wasip1-threads",
+      "aarch64-unknown-linux-ohos"
     ],
     "wasm": {
       "initialMemory": 16384,
@@ -73,6 +74,7 @@
     "@rspack/binding-darwin-x64": "workspace:*",
     "@rspack/binding-win32-x64-msvc": "workspace:*",
     "@rspack/binding-linux-x64-gnu": "workspace:*",
-    "@rspack/binding-linux-x64-musl": "workspace:*"
+    "@rspack/binding-linux-x64-musl": "workspace:*",
+    "@rspack/binding-openharmony-arm64": "workspace:*"
   }
 }
